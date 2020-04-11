@@ -22,18 +22,20 @@
       :text="$t('自分や家族の症状に不安や心配があればまずは電話相談をどうぞ')"
       :btn-text="$t('相談の手順を見る')"
     />
-    <v-row class="DataBlock">
-      <confirmed-cases-details-card />
-      <tested-cases-details-card />
-      <confirmed-cases-attributes-card />
-      <confirmed-cases-number-card />
-      <inspection-persons-number-card />
-      <tested-number-card />
-      <telephone-advisory-reports-number-card />
-      <consultation-desk-reports-number-card />
-      <metro-card />
-      <agency-card />
-    </v-row>
+    <client-only placeholder="Loading...">
+      <v-row class="DataBlock">
+        <confirmed-cases-details-card />
+        <tested-cases-details-card />
+        <confirmed-cases-attributes-card />
+        <confirmed-cases-number-card />
+        <inspection-persons-number-card />
+        <tested-number-card />
+        <telephone-advisory-reports-number-card />
+        <consultation-desk-reports-number-card />
+        <metro-card />
+        <agency-card />
+      </v-row>
+    </client-only>
     <v-divider />
   </div>
 </template>
